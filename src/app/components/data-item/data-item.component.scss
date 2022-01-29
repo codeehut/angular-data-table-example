@@ -1,0 +1,70 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/variables";
+
+.item {
+  padding: 0.75rem 3rem;
+  border-bottom: 1px solid var(--bs-gray-200);
+  transition: background-color 200ms;
+
+  &:hover {
+    background-color: var(--bs-gray-100);
+  }
+
+  &__project {
+    &__logo {
+      border: 1px solid var(--bs-gray-200);
+      padding: 0.25rem;
+      border-radius: 8px;
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+    &__name {
+
+    }
+    &__company {
+      font-size: 12px;
+      color: var(--bs-gray-500);
+    }
+  }
+  &__author{
+    &__name {
+
+    }
+    &__role {
+      font-size: 12px;
+      color: var(--bs-gray-500);
+    }
+  }
+  &__progress{
+    &__bar {
+      background-color: var(--bs-gray-200);
+      height: 4px;
+    }
+    &__completed {
+      background-color: var(--bs-green);
+      height: 100%;
+    }
+  }
+
+  &__deadline {
+    display: inline-flex;
+    background-color: var(--bs-gray-200);
+    padding: 0.375rem;
+    border-radius: 5px;
+    font-size: 14px;
+    align-items: center;
+
+    svg {
+      margin-right: 4px;
+    }
+    &.urgent {
+      color: var(--bs-warning);
+      svg {
+        fill: var(--bs-warning);
+      }
+    }
+  }
+}

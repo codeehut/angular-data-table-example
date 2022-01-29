@@ -1,0 +1,53 @@
+<div class="item">
+<div class="row justify-content-between">
+    <div class="col-md-3">
+        <div class="item__project">
+            <div class="row">
+                <div class="col-auto">
+                    <div class="item__project__logo">
+                        <img [src]="'assets/images/' + item.project.logo" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item__project__name">
+                        {{ item.project.name }}
+                    </div>
+                    <div class="item__project__company">
+                        {{ item.project.company }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="item__author">
+            <div class="item__author__name">
+                {{ item.author.name }}
+            </div>
+            <div class="item__author__role">
+                {{ item.author.role }}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 align-self-center">
+        <div class="item__progress">
+            <div class="row">
+                <div class="col align-self-center">
+                    <div class="item__progress__bar">
+                        <div class="item__progress__completed" [ngStyle]="{ width: item.progress + '%' }"></div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    {{ item.progress }}%
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="item__deadline" [class.urgent]="item.deadline_in_days < 7">
+            <svg width="16" height="16"><use href="#icon-clock"></use></svg>
+            <span>{{ item.deadline_in_days }} days left</span>
+        </div>
+    </div>
+</div>
+</div>

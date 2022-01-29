@@ -1,0 +1,16 @@
+<section class="section-projects">
+    <div class="container">
+        <div class="section-projects__wrapper shadow">
+
+            <div class="section-projects__header">
+                <app-data-headers></app-data-headers>
+            </div>
+
+            <div class="section-projects__results pb-4">
+                <app-data-item *ngFor="let project of projects"
+                               [item]="project"
+                ></app-data-item>
+            </div>
+        </div>
+    </div>
+</section>
