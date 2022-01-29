@@ -7,6 +7,7 @@ import { HomeComponent } from './routes/home/home.component';
 import { DataItemComponent } from './components/data-item/data-item.component';
 import { DataHeadersComponent } from './components/data-headers/data-headers.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
+import { DeadlineLabelPipe } from './pipes/deadline-label.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
     HomeComponent,
     DataItemComponent,
     DataHeadersComponent,
-    SearchBoxComponent
+    SearchBoxComponent,
+    DeadlineLabelPipe
   ],
   imports: [
     BrowserModule,

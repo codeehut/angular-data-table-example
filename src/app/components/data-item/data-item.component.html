@@ -57,7 +57,7 @@
                 <svg width="16" height="16">
                     <use href="#icon-clock"></use>
                 </svg>
-                <span>{{ item.deadline_in_days }} days left</span>
+                <span>{{ item.deadline_in_days | deadlineLabel }}</span>
             </div>
         </div>
     </div>

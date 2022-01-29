@@ -12,8 +12,21 @@ const projects: Project[] = [
             "role": "Project Manager",
             "avatar": "/avatar.svg"
         },
+        "progress": 36,
+        "deadline_in_days": 15
+    }, {
+        "project": {
+            "name": "App Development",
+            "company": "Dropbox, Inc.",
+            "logo": "/dropbox.svg"
+        },
+        "author": {
+            "name": "Shane Black",
+            "role": "Project Manager",
+            "avatar": "/avatar.svg"
+        },
         "progress": 25,
-        "deadline_in_days": 7
+        "deadline_in_days": 9
     }, {
         "project": {
             "name": "Collaborative software",
