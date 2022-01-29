@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './routes/home/home.component';
 import { DataItemComponent } from './components/data-item/data-item.component';
 import { DataHeadersComponent } from './components/data-headers/data-headers.component';
+import { SearchBoxComponent } from './components/search-box/search-box.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DataItemComponent,
-    DataHeadersComponent
+    DataHeadersComponent,
+    SearchBoxComponent
   ],
   imports: [
     BrowserModule,

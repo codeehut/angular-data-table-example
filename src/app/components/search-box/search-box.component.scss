@@ -1,0 +1,28 @@
+.search {
+  &__wrapper {
+    padding: 1rem;
+  }
+  &__box {
+    padding: 0.375rem;
+    border: 1px solid var(--bs-gray-200);
+    border-radius: 4px;
+    display: flex;
+  }
+  &__icon {
+    flex: 0 0 auto;
+    width: 18px;
+    height: 18px;
+    margin-right: 0.75rem;
+  }
+  &__input {
+    border: none;
+    flex: 1 0 0%;
+    outline: none;
+  }
+  &__filter {
+    margin-left: 0.75rem;
+    flex: 0 0 auto;
+    width: 18px;
+    height: 18px;
+  }
+}

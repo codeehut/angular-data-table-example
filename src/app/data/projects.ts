@@ -16,9 +16,9 @@ const projects: Project[] = [
         "deadline_in_days": 7
     }, {
         "project": {
-            "name": "App Development",
-            "company": "Dropbox, Inc.",
-            "logo": "/dropbox.svg"
+            "name": "Collaborative software",
+            "company": "Confluence, Inc.",
+            "logo": "/confluence.svg"
         },
         "author": {
             "name": "Shane Black",
@@ -30,8 +30,8 @@ const projects: Project[] = [
     }, {
         "project": {
             "name": "App Development",
-            "company": "Dropbox, Inc.",
-            "logo": "/dropbox.svg"
+            "company": "Jira, Inc.",
+            "logo": "/jira.svg"
         },
         "author": {
             "name": "Shane Black",
