@@ -36,8 +36,14 @@
 
 
     &.first, &.prev {
+      background-color: var(--bs-gray-200);
+      svg {
+        transform: rotate(180deg);
+      }
+
+    }
+    &.last, &.next {
       background-color: var(--bs-gray-300);
     }
-    &.last, &.next {}
   }
 }
