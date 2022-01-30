@@ -2,21 +2,23 @@
     <div class="container">
         <div class="section-projects__wrapper shadow">
 
-            <app-search-box></app-search-box>
+            <app-search-box
+                (setTermEvent)="updateTerm($event)"></app-search-box>
 
             <div class="section-projects__header">
                 <app-data-headers></app-data-headers>
             </div>
 
             <div class="section-projects__results pb-4">
-                <app-data-item *ngFor="let project of projects"
+                <app-data-item *ngFor="let project of projects | filtering: term | paging: currentPage"
                                [item]="project"
                 ></app-data-item>
             </div>
 
             <app-pagination
-                    [pages]="12"
-                    [currentPage]="2"
+                    [pages]="pages"
+                    [currentPage]="currentPage"
+                    (setPageEvent)="setPage($event)"
                 ></app-pagination>
         </div>
     </div>

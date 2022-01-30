@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-pagination',
@@ -9,6 +9,7 @@ export class PaginationComponent implements OnInit {
 
   @Input() pages !: number;
   @Input() currentPage !: number;
+  @Output() setPageEvent = new EventEmitter<number>();
 
   public visiblePages: number[] = [];
   public offsetPages = 2;
@@ -18,14 +19,15 @@ export class PaginationComponent implements OnInit {
 
   ngOnInit(): void {
     this.calcVisiblePages();
-    console.log(this.pages);
-    console.log(this.currentPage);
-    console.log(this.visiblePages);
+    // console.log(this.pages);
+    // console.log(this.currentPage);
+    // console.log(this.visiblePages);
   }
 
   toPage(page: number) {
-    console.log(page);
+    // console.log(page);
     this.currentPage = page;
+    this.setPageEvent.emit(page);
     this.calcVisiblePages();
   }
 

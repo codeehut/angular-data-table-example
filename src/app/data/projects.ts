@@ -1,7 +1,45 @@
 import {Project} from "../types/project.type";
 
-const projects: Project[] = [
-    {
+const projects: Project[] = [{
+        "project": {
+            "name": "App Development",
+            "company": "Dropbox, Inc.",
+            "logo": "/dropbox.svg"
+        },
+        "author": {
+            "name": "Shane Black",
+            "role": "Project Manager",
+            "avatar": "/avatar.svg"
+        },
+        "progress": 95,
+        "deadline_in_days": 4
+    }, {
+        "project": {
+            "name": "App Development",
+            "company": "Dropbox, Inc.",
+            "logo": "/dropbox.svg"
+        },
+        "author": {
+            "name": "Shane Black",
+            "role": "Project Manager",
+            "avatar": "/avatar.svg"
+        },
+        "progress": 25,
+        "deadline_in_days": 9
+    }, {
+        "project": {
+            "name": "Collaborative software",
+            "company": "Confluence, Inc.",
+            "logo": "/confluence.svg"
+        },
+        "author": {
+            "name": "Thanasis Dimitriads",
+            "role": "Project Manager",
+            "avatar": "/avatar.svg"
+        },
+        "progress": 50,
+        "deadline_in_days": 7
+    }, {
         "project": {
             "name": "App Development",
             "company": "Dropbox, Inc.",
@@ -34,7 +72,124 @@ const projects: Project[] = [
             "logo": "/confluence.svg"
         },
         "author": {
+            "name": "Thanasis Dimitriads",
+            "role": "Project Manager",
+            "avatar": "/avatar.svg"
+        },
+        "progress": 50,
+        "deadline_in_days": 7
+    }, {
+        "project": {
+            "name": "App Development",
+            "company": "Dropbox, Inc.",
+            "logo": "/dropbox.svg"
+        },
+        "author": {
             "name": "Shane Black",
+            "role": "Project Manager",
+            "avatar": "/avatar.svg"
+        },
+        "progress": 36,
+        "deadline_in_days": 15
+    }, {
+        "project": {
+            "name": "App Development",
+            "company": "Dropbox, Inc.",
+            "logo": "/dropbox.svg"
+        },
+        "author": {
+            "name": "Shane Black",
+            "role": "Project Manager",
+            "avatar": "/avatar.svg"
+        },
+        "progress": 25,
+        "deadline_in_days": 9
+    }, {
+        "project": {
+            "name": "Collaborative software",
+            "company": "Confluence, Inc.",
+            "logo": "/confluence.svg"
+        },
+        "author": {
+            "name": "Thanasis Dimitriads",
+            "role": "Project Manager",
+            "avatar": "/avatar.svg"
+        },
+        "progress": 50,
+        "deadline_in_days": 7
+    }, {
+        "project": {
+            "name": "App Development",
+            "company": "Dropbox, Inc.",
+            "logo": "/dropbox.svg"
+        },
+        "author": {
+            "name": "Shane Black",
+            "role": "Project Manager",
+            "avatar": "/avatar.svg"
+        },
+        "progress": 36,
+        "deadline_in_days": 15
+    }, {
+        "project": {
+            "name": "App Development",
+            "company": "Dropbox, Inc.",
+            "logo": "/dropbox.svg"
+        },
+        "author": {
+            "name": "Shane Black",
+            "role": "Project Manager",
+            "avatar": "/avatar.svg"
+        },
+        "progress": 25,
+        "deadline_in_days": 9
+    }, {
+        "project": {
+            "name": "Collaborative software",
+            "company": "Confluence, Inc.",
+            "logo": "/confluence.svg"
+        },
+        "author": {
+            "name": "Thanasis Dimitriads",
+            "role": "Project Manager",
+            "avatar": "/avatar.svg"
+        },
+        "progress": 50,
+        "deadline_in_days": 7
+    }, {
+        "project": {
+            "name": "App Development",
+            "company": "Dropbox, Inc.",
+            "logo": "/dropbox.svg"
+        },
+        "author": {
+            "name": "Shane Black",
+            "role": "Project Manager",
+            "avatar": "/avatar.svg"
+        },
+        "progress": 36,
+        "deadline_in_days": 15
+    }, {
+        "project": {
+            "name": "App Development",
+            "company": "Dropbox, Inc.",
+            "logo": "/dropbox.svg"
+        },
+        "author": {
+            "name": "Shane Black",
+            "role": "Project Manager",
+            "avatar": "/avatar.svg"
+        },
+        "progress": 25,
+        "deadline_in_days": 9
+    }, {
+        "project": {
+            "name": "Collaborative software",
+            "company": "Confluence, Inc.",
+            "logo": "/confluence.svg"
+        },
+        "author": {
+            "name": "Thanasis Dimitriads",
             "role": "Project Manager",
             "avatar": "/avatar.svg"
         },

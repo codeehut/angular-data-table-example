@@ -5,7 +5,7 @@
                 <svg class="search__icon">
                     <use href="#icon-search"></use>
                 </svg>
-                <input class="search__input" placeholder="Search project"/>
+                <input (change)="setTerm($event)" class="search__input" placeholder="Search project"/>
                 <svg class="search__filter">
                     <use href="#icon-filters"></use>
                 </svg>

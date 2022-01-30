@@ -1,9 +1,9 @@
 <div class="pagination__wrapper">
-    <div class="pagination__item first">
+    <div class="pagination__item first" [class.deactivate]="currentPage === 1">
         <a (click)="firstPage()"><svg width="12" height="12"><use href="#icon-arrow-forward"></use></svg></a>
     </div>
-    <div class="pagination__item prev">
-        <a (click)="prevPage()"><svg width="10" height="10"><use href="#icon-arrow-next"></use></svg></a>
+    <div class="pagination__item prev" [class.deactivate]="currentPage === 1">
+        <a (click)="prevPage()"><svg width="9" height="9"><use href="#icon-arrow-next"></use></svg></a>
     </div>
     <div class="pagination__item" [class.active]="1 === currentPage">
         <a (click)="firstPage()">1</a>
@@ -18,10 +18,10 @@
     <div class="pagination__item" [class.active]="pages === currentPage">
         <a (click)="lastPage()">{{ pages }}</a>
     </div>
-    <div class="pagination__item next">
-        <a (click)="nextPage()"><svg width="10" height="10"><use href="#icon-arrow-next"></use></svg></a>
+    <div class="pagination__item next" [class.deactivate]="currentPage === pages">
+        <a (click)="nextPage()"><svg width="9" height="9"><use href="#icon-arrow-next"></use></svg></a>
     </div>
-    <div class="pagination__item last">
+    <div class="pagination__item last" [class.deactivate]="currentPage === pages">
         <a (click)="lastPage()"><svg width="12" height="12"><use href="#icon-arrow-forward"></use></svg></a>
     </div>
 </div>
