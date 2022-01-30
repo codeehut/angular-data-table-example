@@ -8,6 +8,7 @@ import { DataItemComponent } from './components/data-item/data-item.component';
 import { DataHeadersComponent } from './components/data-headers/data-headers.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 import { DeadlineLabelPipe } from './pipes/deadline-label.pipe';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DeadlineLabelPipe } from './pipes/deadline-label.pipe';
     DataItemComponent,
     DataHeadersComponent,
     SearchBoxComponent,
-    DeadlineLabelPipe
+    DeadlineLabelPipe,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,

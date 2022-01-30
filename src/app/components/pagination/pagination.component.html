@@ -1,0 +1,27 @@
+<div class="pagination__wrapper">
+    <div class="pagination__item first">
+        <a (click)="firstPage()"><</a>
+    </div>
+    <div class="pagination__item prev">
+        <a (click)="prevPage()"><</a>
+    </div>
+    <div class="pagination__item" [class.active]="1 === currentPage">
+        <a (click)="firstPage()">1</a>
+    </div>
+    <!--Add ellipsis-->
+    <div class="pagination__item offset" *ngIf="currentPage > offsetPages"><span class="">...</span></div>
+    <div class="pagination__item" *ngFor="let page of visiblePages" [class.active]="page === currentPage">
+        <a (click)="toPage(page)">{{ page }}</a>
+    </div>
+    <!--Add ellipsis-->
+    <div class="pagination__item offset" *ngIf="currentPage < pages - offsetPages"><span class="">...</span></div>
+    <div class="pagination__item" [class.active]="pages === currentPage">
+        <a (click)="lastPage()">{{ pages }}</a>
+    </div>
+    <div class="pagination__item prev">
+        <a (click)="nextPage()"> ></a>
+    </div>
+    <div class="pagination__item first">
+        <a (click)="lastPage()"><svg width="12" height="12"><use href="#icon-arrow-forward"></use></svg></a>
+    </div>
+</div>
